@@ -1,147 +1,177 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <title>Website Testing</title>
-  </head>
-  <style>
-    .b {
-      text-align: center;
-    }
-    .c {
-      text-align: right;
-    }
-    .table2 {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .table3 {
-      margin-left: auto;
-      margin-right: initial;
-    }
-  </style>
-  <body>
-    Spider-Man Index Weakest to Strongest<br />
-    <br />
-    <br />
-    <header>
-      Peter Parker "Golden Spongecake"
-    </header>
-    <br />
-      <img src="images/golden_spongecake.png" width="200" height="300" alt=""/>
-    <br />
-    <br />
-    <table border="5">
-      <tr>
-        <td>Earth</td>
-        <td>51914</td>
-      </tr>
-      <tr>
-        <td>Origin</td>
-        <td>Human Mutate <br /> (Bitten By Radioactive Spider)</td>
-      </tr>
-      <tr>
-        <td>Abilities</td>
-        <td></td>
-      </tr>
-    </table>
-    <br />
-    <br />
-    <header>
-      Penelope Parker (Spider-Girl)
-    </header>
-    <br />
-      <img src="images/penelope_parker.jpeg" alt="" width="200" height="300"/>
-    <br />
-    <br />
-    <table border="5">
-      <tr>
-        <td>Earth</td>
-        <td>11</td>
-      </tr>
-      <tr>
-        <td>Origin</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Abilities</td>
-        <td></td>
-      </tr>
-    </table>
-    <header>
-      <div class="b">Peter Benjamin Parker (ORIGINAL)</div>
-    </header>
-    <br />
-      <div class="b"><img src="images/Peter_B_Parker.jpeg" alt="Peter Benjamin Parker" width="200" height="300"/></div>
-    <br />
-    <br />
-    <table class=table2 border="5">
-        <tr>
-          <td>Earth</td>
-          <td>616</td>
-        </tr>
-        <tr>
-          <td>Abilities</td>
-          <td>Web Slinging <br /> Spidey Sense <br /> Super Strength <br /> Super Speed/Agility </td>
-        </tr>
-    </table>
-    <br />
-    <br />
-    <header>
-      <div class="c">Miles Morales</div>
-    </header>
-    <br />
-    <div class="c"><img src="images/miles_morales.jpeg" width="200" height="300" alt="Miles Morales"/></div>
-    <br />
-    <br />
-    <table class="table3" border="5">
-      <tr>
-        <td>Earth</td>
-        <td>1610 (Old Canon) <br /> 616 (New Canon)</td>
-      </tr>
-      <tr>
-        <td>Abilities</td>
-        <td>Web Slinging <br /> Spidey Sense <br /> Super Strength <br /> Super Speed/Agility <br /> Camouflage <br /> Venom Strike/Blast </td>
-      </tr>
-    </table>
-    <br />
-    <br />
-    <header>
-      Gwen Stacy
-    </header>
-    <br />
-    <img src="images/gwen_stacy.jpeg" width="200" height="300" alt=""/>
-    <br />
-    <br />
-    <table border="5">
-      <tr>
-        <td>Earth</td>
-        <td>65</td>
-      </tr>
-      <tr>
-        <td>Abilities</td>
-        <td>Web Slinging <br /> Spidey Sense <br /> Super Strength <br /> Super Speed/Agility </td>
-      </tr>
-    </table>
-      <br />
-      <br />
-      <header>
-        Miguel O'Hara (2099)
-      </header>
-      <br />
-      <img src="images/miguel_o'hara.jpeg" width="200" height="300" alt=""/>
-      <br />
-      <br />
-      <table border="5">
-        <tr>
-          <td>Earth</td>
-          <td>928</td>
-        </tr>
-        <tr>
-          <td>Abilities</td>
-          <td>Web Slinging <br /> Spidey Sense <br /> Super Strength <br /> Super Speed/Agility <br /> Telescopic/Night Vision <br /></td>
-        </tr>
-      </table>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            height: 200px;
+        }
 
-  </body>
+        body {
+            background-color: red;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .jumbotron {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<div class="jumbotron text-center">
+    <h1>Spiderman Through The Ages</h1>
+    <p>A Tale of Progression and Succession</p>
+
+</div>
+<div class="container">
+    <!-- Header/Row 0 -->
+    <div class="row">
+        <div class="col-sm-12"><h1>Spider-Man Index Weakest to Strongest</h1></div>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>Peter Parker</h4>
+            <img src="images/golden_spongecake.png"/>
+            <table class="table">
+                <tr>
+                    <th colspan="2">Golden Spongecake</th>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>51914</td>
+                </tr>
+                <tr>
+                    <td>Origin</td>
+                    <td>Human Mutate <br/> (Bitten By Radioactive Spider)</td>
+                </tr>
+                <tr>
+                    <td>Abilities</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-sm-4">
+            <h4>Penelope Parker (Spider-Girl)</h4>
+            <img src="images/penelope_parker.jpeg"/>
+            <table class="table">
+                <tr>
+                    <th colspan="2">Spider-Girl</th>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Origin</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Abilities</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-4">
+            <h4>Peter Benjamin Parker</h4>
+            <img src="images/Peter_B_Parker.jpeg" alt="Peter Benjamin Parker"/>
+            <table class="table">
+                <tr>
+                    <th colspan="2">The Original Gold Standard</th>
+                </tr>
+                <tr>
+                    <td>Earth</td>
+                    <td>616</td>
+                </tr>
+                <tr>
+                    <td>Abilities</td>
+                    <td>Web Slinging <br/> Spidey Sense <br/> Super Strength <br/> Super Speed/Agility</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="col-sm-4">
+            <h4><div class="c">Miles Morales</div></h4>
+            <div class="c"><img src="images/miles_morales.jpeg" width="200" height="300" alt="Miles Morales"/></div>
+            <table class="table"">
+                <tr>
+                    <td>Earth</td>
+                    <td>1610 (Old Canon) <br/> 616 (New Canon)</td>
+                </tr>
+                <tr>
+                    <td>Abilities</td>
+                    <td>Web Slinging <br/> Spidey Sense <br/> Super Strength <br/> Super Speed/Agility <br/> Camouflage
+                        <br/>
+                        Venom
+                        Strike/Blast
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-4">
+            <h4>Gwen Stacy</h4>
+            <img src="images/gwen_stacy.jpeg"/>
+            <table class="table">
+                <tr>
+                    <td>Earth</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>Abilities</td>
+                    <td>Web Slinging <br/> Spidey Sense <br/> Super Strength <br/> Super Speed/Agility</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-4">
+            <h4>Miguel O'Hara (2099)</h4>
+            <img src="images/miguel_o'hara.jpeg"/>
+            <table class="table">
+                <tr>
+                    <td>Earth</td>
+                    <td>928</td>
+                </tr>
+                <tr>
+                    <td>Abilities</td>
+                    <td>Web Slinging <br/> Spidey Sense <br/> Super Strength <br/> Super Speed/Agility <br/>
+                        Telescopic/Night
+                        Vision
+                        <br/></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
 </html>
