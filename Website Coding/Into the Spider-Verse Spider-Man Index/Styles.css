@@ -1,0 +1,45 @@
+.spiderverse {
+    border: transparent;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.marvel {
+    border: transparent;
+    width: 100px;
+    height: 40px;
+}
+
+div {
+    text-align: center;
+}
+
+body {
+    background-image: url("images/background.jpeg");
+}
+
+img {
+    border: 5px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 300px;
+}
+
+.jumbotron {
+    font-family: "Impact", Impact, monospace;
+    background-color: #B11313;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.container {
+    background-color: transparent;
+}
+
+.table {
+    border: 5px solid white;
+    color: white;
+}
